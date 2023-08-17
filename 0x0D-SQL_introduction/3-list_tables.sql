@@ -1,4 +1,3 @@
--- list of all tables of the MySQL server
+-- list of all tables of the MySQL database
 
-SELECT *
-FROM mysql
+SHOW mysql
