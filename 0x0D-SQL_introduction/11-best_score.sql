@@ -4,5 +4,5 @@
 
 SELECT score, name 
 FROM second_table
-ORDER BY score DESC, name DESC
-WHERE score >= 10;
+WHERE score >= 10
+ORDER BY score DESC, name DESC;
