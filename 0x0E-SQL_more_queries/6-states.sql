@@ -1,10 +1,12 @@
--- this script create the database hbtn_0d_usa and the table states
--- (in the database hbtn_0d_usa) on your MySQL server
+-- Create the database 'hbtn_0d_usa' if it doesn't already exist
+CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 
-CREATE DATATBASE IF NOT EXISTS  hbtn_0d_usa;
+-- Switch to using the 'hbtn_0d_usa' database
+USE hbtn_0d_usa;
 
-CREATE TABLE IF NOT EXISTS  hbtn_0d_usa . states (
-	id INT NOT NULL AUTO_INCREMENT,
-	PRIMARY KEY(id),
-	name VARCHAR(256) NOT NULL
+-- Create the 'states' table if it doesn't already exist
+CREATE TABLE IF NOT EXISTS states (
+    id INT NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (id),
+    name VARCHAR(256) NOT NULL
 );
