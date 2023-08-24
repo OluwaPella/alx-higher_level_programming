@@ -1,9 +1,9 @@
 --- this script lists all the cities of California that can be found in the database hbtn_0d_usa
 
-SELECT cities.name
+SELECT id, name
 FROM cities
-WHERE  cities.state_id = (
-	SELECT id
+WHERE state_id IN
+	(SELECT id
 	FROM states
 	WHERE name = 'California')
 ORDER BY cities.id ASC;
