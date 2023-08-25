@@ -11,4 +11,4 @@ GROUP BY
 HAVING
     COUNT(*) > 0
 ORDER BY
-    number_of_shows DESC;
+    number_of_shows;
