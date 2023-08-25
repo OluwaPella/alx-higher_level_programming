@@ -1,6 +1,5 @@
 -- this script count numbers of genres
--- Results must be sorted in descending order by the number of shows linked
-
+-- Results must be sorted
 SELECT
     genre AS genre,
     COUNT(*) AS number_of_shows
