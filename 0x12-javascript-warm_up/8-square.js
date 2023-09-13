@@ -5,6 +5,7 @@
 const num = Math.floor(Number(process.argv[2]));
 
 if (!isNaN(num)) {
+if (num > 0) {
   for (let i = 0; i < num; i++) {
     let row  = '';
     for (let n = 0; n < num; n++) {
@@ -12,6 +13,7 @@ if (!isNaN(num)) {
     }
     console.log(row);
   }
-} else {
+}  
+}else {
   console.log('Missing size');
 }
