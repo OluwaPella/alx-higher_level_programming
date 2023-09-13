@@ -6,11 +6,11 @@ const num = Math.floor(Number(process.argv[2]));
 
 if (!isNaN(num)) {
   for (let i = 0; i < num; i++) {
-    let x  = '';
+    let row  = '';
     for (let n = 0; n < num; n++) {
-      x += 'x';
+      row += 'x';
     }
-    console.log(x);
+    console.log(row);
   }
 } else {
   console.log('Missing size');
